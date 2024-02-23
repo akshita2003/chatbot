@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.chat-heading {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.main-container {
+    background-color: #581B98;
+    width: 350px;
+    margin: 10px auto;
+    padding-top: 10px;
+    padding-bottom: 90px;
+   
+    /* border: 2px solid #000; */
+    border-radius: 20px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1) ;
+    height: 400px; /* Starting height */
+    max-height: 450px; /* Maximum height for scroll */
+    overflow: hidden; /* Add scroll when content exceeds max-height */
+}
+.chat-content {
+    text-align: center; /* Center the chat content */
+}
+.chat-container {
+    background-color: #ffffff;
+    padding: 10px;
+    width: 330px;
+    /* border-top: 2px solid #000;
+    border-bottom: 2px solid #000; */
+    /* border-radius: 20px; */
+    margin-bottom: 10px;
+    height: 350px;
+    overflow-y: auto; /* Enable scrolling for chat container */
+    scroll-behavior: smooth; /* Smooth scrolling effect */
+
+    /* Custom scrollbar styling */
+    scrollbar-width: thin;
+    scrollbar-color: #581B98 #ffffff; /* Blue color for scrollbar thumb */
+}
+
+.chat-container::-webkit-scrollbar {
+    width: 6px; /* Make the scrollbar thin */
+}
+
+.chat-container::-webkit-scrollbar-thumb {
+    background: #eee; /* Blue color for scrollbar thumb */
+    border-radius: 3px; /* Make the scrollbar small */
+}
+
+.chat-container::-webkit-scrollbar-thumb:hover {
+    background: #581B98; /* Change color on hover */
+}
+
+.chat-box {
+    color: #581B98; 
+}
+/* Existing CSS for styles up to this point */
+
+.message {
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    display: inline-block;
+    max-width: 80%; /* Add a maximum width for the messages */
+}
+
+.message.user {
+    /* text-align:right; */
+    float: right;
+    
+    margin-bottom: 10px;
+    background-color: #581B98;
+    color: #fff;
+    border-end-end-radius: 4px;
+    
+    clear: both;
+}
+
+.message.bot {
+    float: left;
+    background-color: #eee;
+    margin-bottom: 10px;
+    color: #000;
+    clear: both;
+    border-end-start-radius: 4px;
+    max-width: 80%; /* Add a maximum width for bot messages */
+}
+
+/* Rest of your CSS... */
+
+
+/* .message {
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    background-color: #581B98; 
+    color: #fff; 
+}
+
+.message.user {
+    text-align: right;
+    border-end-end-radius: 4px;
+}
+
+.message.bot {
+    text-align: left;
+    border-radius: 20px;
+    background-color: #eee; 
+    color: #000; /
+    border-end-start-radius:4px;
+} */
+
+.input-container {
+    display: flex;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px 30px ;
+    /* border: none; */
+    border-radius: 20px;
+    text-decoration: none;
+    /* border: 2px solid #000; */
+    margin-left: 10px;
+    width: 265px;
+    
+}
+/* .material-icons {
+    
+    color:white; 
+    
+    padding: 10px 20px;
+    
+    border-radius: 20px;
+    cursor: pointer; */
+    
+    /* margin-right: 10px; */
+/* } */
+/* Style the input wrapper to position the icon */
+.input-wrapper {
+    position: relative;
+    display: inline-block;
+    
+}
+
+/* Style the input field */
+#user-input {
+    padding-right: 30px;
+     /* Adjust the padding to make space for the icon */
+   
+}
+
+/* Style the send button (icon) */
+#send-button {
+    position: absolute;
+    top: 50%;
+    right: 5px; /* Adjust the right distance as needed */
+    transform: translateY(-50%);
+    cursor: pointer;
+    color:#581B98
+}
